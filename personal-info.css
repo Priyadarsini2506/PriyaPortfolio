@@ -24,6 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    flex-wrap: wrap;
 }
 
 .navbar-brand {
@@ -33,6 +34,7 @@ body {
 .menu-items {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .menu-items li {
@@ -52,7 +54,7 @@ body {
 
 /* Personal info section styling */
 .personal-info {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     background-color: #fff;
     text-align: center;
     margin-top: 2rem;
@@ -85,6 +87,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
+    overflow-x: auto; /* Ensure table can scroll horizontally */
 }
 
 table, th, td {
@@ -115,6 +118,7 @@ th {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
+        padding: 0 1rem;
     }
 
     .menu-items {
@@ -132,5 +136,19 @@ th {
 
     table, th, td {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .personal-content h1 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 0.8rem;
     }
 }
