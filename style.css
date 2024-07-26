@@ -38,7 +38,8 @@ header {
   
 }
 
-.menu-items {
+.menu-items
+{
   display: flex;
 }
 
